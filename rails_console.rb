@@ -35,6 +35,6 @@ class RailsConsole
 end
 
 cred_file = File.expand_path('../.consoleaccess', __FILE__)
-rails_console = RailsConsole.new(:port => ENV["VCAP_CONSOLE_PORT"], :host => '0.0.0.0',
+rails_console = RailsConsole.new(:port => ENV["PORT"], :host => '0.0.0.0',
   :credentials_file=>cred_file)
 rails_console.start
